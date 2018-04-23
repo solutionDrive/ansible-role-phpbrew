@@ -11,7 +11,26 @@ homebrew
 Role Variables
 --------------
 
-none
+```
+phpbrew_requirements:
+  - automake 
+  - autoconf 
+  - curl 
+  - pcre 
+  - bison 
+  - re2c 
+  - mhash 
+  - libtool 
+  - icu4c 
+  - gettext 
+  - jpeg 
+  - openssl 
+  - libxml2 
+  - mcrypt 
+  - gmp 
+  - libevent
+```
+List of requirements which should be installed with homebrew. See [here](https://github.com/phpbrew/phpbrew/wiki/Requirement)
 
 Dependencies
 ------------

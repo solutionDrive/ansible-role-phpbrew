@@ -1,2 +1,18 @@
 ---
-# defaults file for ansible-role-phpbrew
+phpbrew_requirements:
+  - automake
+  - autoconf
+  - curl
+  - pcre
+  - bison
+  - re2c
+  - mhash
+  - libtool
+  - icu4c
+  - gettext
+  - jpeg
+  - openssl
+  - libxml2
+  - mcrypt
+  - gmp
+  - libevent
