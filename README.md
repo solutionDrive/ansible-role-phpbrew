@@ -30,7 +30,15 @@ phpbrew_requirements:
   - gmp 
   - libevent
 ```
-List of requirements which should be installed with homebrew. See [here](https://github.com/phpbrew/phpbrew/wiki/Requirement)
+List of requirements which should be installed with homebrew. See [here](https://github.com/phpbrew/phpbrew/wiki/Requirement#homebrew)
+
+```
+phpbrew_linked_requirements:
+  - icu4c
+  - openssl
+  - libxml2
+```
+List of requirements which should be linked with homebrew. See [here](https://github.com/phpbrew/phpbrew/wiki/Requirement#homebrew)
 
 Dependencies
 ------------

@@ -1,2 +1,2 @@
 ---
-- include: install_requirements.yml
+- include: requirements.yml

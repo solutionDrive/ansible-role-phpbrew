@@ -1,5 +1,0 @@
----
-- name: Install requirements with homebrew
-  homebrew:
-    name: "{{ item }}"
-  with_items: "{{ phpbrew_requirements }}"

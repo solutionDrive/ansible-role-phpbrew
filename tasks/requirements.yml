@@ -1,0 +1,11 @@
+---
+- name: Install requirements with homebrew
+  homebrew:
+    name: "{{ item }}"
+  with_items: "{{ phpbrew_requirements }}"
+
+- name: Link requirements with homebrew
+  homebrew:
+    name: "{{ item }}"
+    state: linked
+  with_items: "{{ phpbrew_linked_requirements }}"

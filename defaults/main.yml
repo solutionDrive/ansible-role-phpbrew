@@ -16,3 +16,8 @@ phpbrew_requirements:
   - mcrypt
   - gmp
   - libevent
+
+phpbrew_linked_requirements:
+  - icu4c
+  - openssl
+  - libxml2
