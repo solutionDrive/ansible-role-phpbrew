@@ -40,6 +40,21 @@ phpbrew_linked_requirements:
 ```
 List of requirements which should be linked with homebrew. See [here](https://github.com/phpbrew/phpbrew/wiki/Requirement#homebrew)
 
+```
+phpbrew_install_version: "1.23.1"
+```
+Version which should be installed
+
+```
+phpbrew_releases_url: "https://github.com/phpbrew/phpbrew/raw/{{ phpbrew_install_version }}/phpbrew"
+```
+Url to download phpbrew
+
+```
+phpbrew_download_destination: "/tmp/phpbrew_{{ phpbrew_install_version }}"
+```
+Path which will be used to download phpbrew
+
 Dependencies
 ------------
 

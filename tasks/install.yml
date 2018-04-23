@@ -1,0 +1,12 @@
+---
+- name: Check phpbrew version
+  shell: "phpbrew --version | head -n1 | grep {{ phpbrew_install_version }}"
+  failed_when: False
+  changed_when: False
+  register: installed_phpbrew_version
+
+- name: Download phpbrew
+  get_url:
+    url: "{{ phpbrew_releases_url }}"
+    dest: "{{ phpbrew_download_destination }}"
+  when: installed_phpbrew_version.rc != 0
