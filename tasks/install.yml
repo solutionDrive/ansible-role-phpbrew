@@ -10,3 +10,11 @@
     url: "{{ phpbrew_releases_url }}"
     dest: "{{ phpbrew_download_destination }}"
   when: installed_phpbrew_version.rc != 0
+
+- name: Move phpbrew for execution
+  copy:
+    src: "{{ phpbrew_download_destination }}"
+    dest: "{{ phpbrew_execution_path }}"
+    mode: u+x,g+x,o+x
+    remote_src: true
+  when: installed_phpbrew_version.rc != 0

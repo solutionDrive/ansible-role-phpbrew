@@ -55,6 +55,11 @@ phpbrew_download_destination: "/tmp/phpbrew_{{ phpbrew_install_version }}"
 ```
 Path which will be used to download phpbrew
 
+```
+phpbrew_execution_path: "/usr/local/bin/phpbrew"
+```
+Path which will be used to make phpbrew executable
+
 Dependencies
 ------------
 
