@@ -16,3 +16,15 @@ phpbrew_requirements:
   - mcrypt
   - gmp
   - libevent
+
+phpbrew_linked_requirements:
+  - icu4c
+  - openssl
+  - libxml2
+
+phpbrew_install_version: "1.23.1"
+
+phpbrew_releases_url: "https://github.com/phpbrew/phpbrew/raw/{{ phpbrew_install_version }}/phpbrew"
+phpbrew_download_destination: "/tmp/phpbrew_{{ phpbrew_install_version }}"
+
+phpbrew_execution_path: "/usr/local/bin/phpbrew"
