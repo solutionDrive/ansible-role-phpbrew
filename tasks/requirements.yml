@@ -9,3 +9,4 @@
     name: "{{ item }}"
     state: linked
   with_items: "{{ phpbrew_linked_requirements }}"
+  changed_when: false # Necessary because otherwise linked would always handled as changed
