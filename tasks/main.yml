@@ -1,2 +1,2 @@
 ---
-# tasks file for ansible-role-phpbrew
+- include: install_requirements.yml
